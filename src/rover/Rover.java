@@ -8,19 +8,7 @@ public class Rover {
         this.cordinate = cordinate;
         this.direction = direction;
     }
-
-    public int getxCordinate(){
-        return this.cordinate.x;
-    }
-
-    public int getyCordinate(){
-        return this.cordinate.y;
-    }
-
-    public Direction getDirection(){
-        return direction;
-    }
-
+    
 
     public String processCommands(String commands){
         for (int index=0; index < commands.length(); index ++ ){
