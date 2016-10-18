@@ -8,4 +8,17 @@ public class Cordinate {
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (!Cordinate.class.isAssignableFrom(obj.getClass())) {
+            return false;
+        }
+
+        Cordinate other = (Cordinate) obj;
+        return this.x == other.x && this.y == other.y;
+    }
 }
