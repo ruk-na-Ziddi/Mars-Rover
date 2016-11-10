@@ -7,13 +7,6 @@ import static org.junit.Assert.*;
 
 public class RoverTest {
     @Test
-    public void shouldSetNewCordinate() throws Exception {
-        Rover rover = new Rover(new Cordinate(2,2), Direction.E);
-        rover.setCordinate(new Cordinate(3,3));
-        assertTrue(rover.getCordinate().equals(new Cordinate(3, 3)));
-    }
-
-    @Test
     public void shouldSetNewDirection() throws Exception {
         Rover rover = new Rover(new Cordinate(2,2), Direction.E);
         rover.setDirection(Direction.N);
