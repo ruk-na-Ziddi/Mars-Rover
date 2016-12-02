@@ -8,12 +8,12 @@ enum Direction {
         }
 
         @Override
-        Direction directToRight(Direction direction) {
+        Direction directToRight() {
             return Direction.S;
         }
 
         @Override
-        Direction directToLeft(Direction direction) {
+        Direction directToLeft() {
             return Direction.N;
         }
     },
@@ -24,12 +24,12 @@ enum Direction {
         }
 
         @Override
-        Direction directToRight(Direction direction) {
+        Direction directToRight() {
             return Direction.N;
         }
 
         @Override
-        Direction directToLeft(Direction direction) {
+        Direction directToLeft() {
             return Direction.S;
         }
     },
@@ -40,12 +40,12 @@ enum Direction {
         }
 
         @Override
-        Direction directToRight(Direction direction) {
+        Direction directToRight() {
             return Direction.E;
         }
 
         @Override
-        Direction directToLeft(Direction direction) {
+        Direction directToLeft() {
             return Direction.W;
         }
     },
@@ -56,16 +56,16 @@ enum Direction {
         }
 
         @Override
-        Direction directToRight(Direction direction) {
+        Direction directToRight() {
             return Direction.W;
         }
 
         @Override
-        Direction directToLeft(Direction direction) {
+        Direction directToLeft() {
             return Direction.E;
         }
     };
     abstract Cordinate move(Cordinate cordinate);
-    abstract Direction directToRight(Direction direction);
-    abstract Direction directToLeft(Direction direction);
+    abstract Direction directToRight();
+    abstract Direction directToLeft();
 }

@@ -37,10 +37,10 @@ public class Rover {
     }
 
     private void turnRight() {
-        direction = direction.directToRight(direction);
+        direction = direction.directToRight();
     }
 
     private void turnLeft() {
-        direction = direction.directToLeft(direction);
+        direction = direction.directToLeft();
     }
 }
